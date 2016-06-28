@@ -43,6 +43,7 @@ define(['../../dist/baustein.amd.js'], function (baustein) {
 
         var addTestHTML = function () {
             testRoot.innerHTML = [].slice.call(arguments).join('');
+            baustein.parse(testRoot);
         };
 
         var createComponentName = (function (n) {
